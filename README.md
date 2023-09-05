@@ -1,5 +1,4 @@
 # Portfolio
-# Portfolio
 Wire Frames
 Copy and paste or drag and drop your images here
 
@@ -34,3 +33,4 @@ Stretch Goals (How your specific project look & behave AFTER you accomplish MVP)
 -Sticky Nav
 
 Anything Else You'd Like Us to Know
+

@@ -6,11 +6,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <title>Camille Grubham</title>
+    <title>Projects</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
-    <link rel="stylesheet" type="text/css" href="main.css" />
-    <link rel="stylesheet" type="text/css" href="/styles/modal.css" />
+    <link rel="stylesheet" type="text/css" href="../main.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Oleo+Script&display=swap" rel="stylesheet">
@@ -43,46 +42,47 @@
             </div>
         </nav>
     </header>
+    <!-- Projects Page -->
+    <section>
+        <div class="container">
+            <!-- =========== CAROUSEL TOP ============== -->
+            <img src="" alt="">
+            <h1>My Projects</h1>
 
-    <!-- Home Page -->
-    <section class="main-container">
-        <article class="main-banner">
-            <div class="container-fluid row">
-                <h1 class="title col-8 offset-2 col-sm-10 offset-sm-1">Camille Grubham</h1>
-
+            <!-- =========== CAROUSEL CONTAINER ======== -->
+            <div class="carousel-container">
+                <!-- previous button -->
+                <div class="carousel-button prev">
+                    <!-- from Bootstrap icon font -->
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                        class="bi bi-caret-left-fill" viewBox="0 0 16 16">
+                        <path
+                            d="m3.86 8.753 5.482 4.796c.646.566 1.658.106 1.658-.753V3.204a1 1 0 0 0-1.659-.753l-5.48 4.796a1 1 0 0 0 0 1.506z" />
+                    </svg>
+                </div>
+                <!-- images -->
+                <div class="carousel-images">
+                    <img src="../images/fillerproject.jpg" alt="" class="images">
+                    <img src="../images/fillerproject2.jpg" alt=" " class="images">
+                    <img src="../images/hobbies3.jpg" alt="" class="images">
+                </div>
+                <!-- next button -->
+                <div class="carousel-button next">
+                    <!-- from Bootstrap icon font -->
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                        class="bi bi-caret-right-fill" viewBox="0 0 16 16">
+                        <path
+                            d="m12.14 8.753-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z" />
+                    </svg>
+                </div>
             </div>
-        </article>
-    </section>
-    <div class="container"></div>
-    <button onclick="toggleModal()">Contact</button>
-    </div>
-    <div id="contact-modal" class="modal-wrapper show">
-        <div class="modal-box">
-            <form>
-                <div class="mb-3 input-group-cng">
-                    <label for="name-input" class="form-label">Name</label>
-                    <input class="form-control" id="name-input">
-                    
-                </div>
-                <div class="mb-3 input-group-cng">
-                    <label for="email-input" class="form-label">Email</label>
-                    <input type="email" class="form-control" id="email-input">
-                </div>
-                <div class="mb-3 input-group-cng">
-                    <label for="message-input" class="form-label">Message</label>
-                    <textarea class="form-control" id="message-input"></textarea>
-                
-                </div>
-                
-                <button type="submit" class="btn btn-primary">Submit</button>
-            </form>
-            <button id="close-modal-button" onclick="toggleModal()">close</button>
         </div>
-    </div>
+    </section>
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
         crossorigin="anonymous"></script>
-    <script src="/scripts/modal.js"></script>
+    <script src="../scripts/projects.js"></script>
 </body>
 
 </html>

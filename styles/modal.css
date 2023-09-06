@@ -13,8 +13,8 @@
 }
 
 .modal-box {
-    background-color: rgb(2, 99, 57);
-    padding: 100px;
+    background-color: #0B3D3A;
+    padding: 100px 150px;
     border-radius: 20px;
     position: relative;
 }
@@ -36,5 +36,15 @@
     text-transform: uppercase;
 }
 #close-modal-button:hover {
-    box-shadow: 2px 2px 2px 1px white;
+    box-shadow: 2px 2px 2px 2px white;
+}
+
+.btn-primary {
+    color: white;
+    background-color: #292d2c;
+    border: none;
+}
+.btn-primary:hover {
+    color: black;
+    background-color: white;
 }

@@ -51,18 +51,20 @@
                 <h1 class="title col-8 offset-2 col-sm-10 offset-sm-1">Camille Grubham</h1>
 
             </div>
+            <div class="contact-area">
+                <button class="contact-button" onclick="toggleModal()">Contact Me</button>
+            </div>
         </article>
     </section>
-    <div class="container"></div>
-    <button onclick="toggleModal()">Contact</button>
-    </div>
-    <div id="contact-modal" class="modal-wrapper show">
+
+
+    <div id="contact-modal" class="modal-wrapper">
         <div class="modal-box">
             <form>
                 <div class="mb-3 input-group-cng">
                     <label for="name-input" class="form-label">Name</label>
                     <input class="form-control" id="name-input">
-                    
+
                 </div>
                 <div class="mb-3 input-group-cng">
                     <label for="email-input" class="form-label">Email</label>
@@ -71,10 +73,10 @@
                 <div class="mb-3 input-group-cng">
                     <label for="message-input" class="form-label">Message</label>
                     <textarea class="form-control" id="message-input"></textarea>
-                
+
                 </div>
-                
-                <button type="submit" class="btn btn-primary">Submit</button>
+
+                <button onclick="submitContact()" class="btn btn-primary">Submit</button>
             </form>
             <button id="close-modal-button" onclick="toggleModal()">close</button>
         </div>

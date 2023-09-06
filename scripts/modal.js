@@ -9,3 +9,8 @@ function toggleModal() {
   }
 }
 
+function submitContact() {
+    const inputName = document.getElementById("name-input").value 
+    alert(`Thanks ${inputName} for reaching out!`);
+    toggleModal();
+}

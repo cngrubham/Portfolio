@@ -41,3 +41,17 @@ body {
     margin-bottom: 12px;
 
 }
+.contact-area {
+    
+    display: flex;
+    justify-content: center;
+}
+.contact-button {
+    border: none;
+    border-radius: 6px;
+    padding: 16px;
+    color: white;
+    background-color: #4B6153;
+    font-size: 32px;
+    margin-top: 48px;
+}

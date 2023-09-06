@@ -50,3 +50,13 @@ body {
     font-size: 32px;
     margin-top: 48px;
 }
+.socials {
+    margin-top: 0;
+    text-align: center;
+    word-spacing: 48px;
+    background-color: #15344D;
+    padding: 0px;
+    text-decoration: none;
+    color: white;
+    font-size:30px;
+}

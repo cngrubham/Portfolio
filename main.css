@@ -24,6 +24,19 @@ body {
     text-align: center;
 }
 
+.card-title {
+    font-family: 'Oleo Script', cursive;
+    color: #0B3D3A;
+    font-size: 140px;
+    font-style: 'Roboto Condensed', sans-serif;
+    padding-top: 200px;
+    text-align: center; 
+    /* https://css-tricks.com/adding-stroke-to-web-text/ */
+    -webkit-text-fill-color: #134f7c;
+    -webkit-text-stroke-width: 1.5px;
+    -webkit-text-stroke-color: #ffffff;
+}
+
 .main-banner {
     width: 100%;
     height: 900px;
@@ -36,11 +49,12 @@ body {
     margin-bottom: 12px;
 
 }
+
 .contact-area {
-    
     display: flex;
     justify-content: center;
 }
+
 .contact-button {
     border: none;
     border-radius: 6px;
@@ -50,6 +64,7 @@ body {
     font-size: 32px;
     margin-top: 48px;
 }
+
 .socials {
     margin-top: 0;
     text-align: center;
@@ -58,8 +73,28 @@ body {
     padding: 0px;
     text-decoration: none;
     color: white;
-    font-size:30px;
+    font-size: 30px;
 }
 
+.about-me-container {
+    background-image: url('images/aboutmebanner.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 500px;
+    margin: 0;
+}
 
+.about-info {
+    width: 100%;
+    margin: 0;
+    display: flex;
+    flex: column;
+    height: 100%;
+    background-color: red;
+}
 
+.bio-info {
+    margin-top: 80px;
+    font-size: 32px;
+}

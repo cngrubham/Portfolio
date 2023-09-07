@@ -9,7 +9,8 @@
     <title>Hobbies</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
-    <link rel="stylesheet" type="text/css" href="../main.css" />
+    <!-- <link rel="stylesheet" type="text/css" href="../main.css" /> -->
+    <link rel="stylesheet" type="text/css" href="/styles/hobbies.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Oleo+Script&display=swap" rel="stylesheet">
@@ -44,14 +45,20 @@
     </header>
 
     <!-- Hobbies Page -->
-    <section>
-        <div>
-            <div class="row">
-                <img src="images/hobbies1.jpg" alt="" class="images ">
-                <img src="images/hobbies2.jpg" alt="" class="images">
-                <img src="images/hobbies3.jpg" alt="" class="images">
-            </div>
+    <section class="photo-gallery">
+        <div class="container"></div>
+        <h2 class="hobby-title">Hobbies</h2>
+        <div class="image-grid">
+            <!-- <img class="image-grid-col-2 image-grid-row-2" src="http://dcode.local/tmp/architecture.jpg"
+                alt="architecture"> -->
+            <img src="../images/hobbies1.jpg" alt="" onclick="toggleInfo()">
+            <img src="../images/hobbies2.jpg" alt="" onclick="toggleInfo()">
+            <img src="../images/hobbies3.jpg" alt=""  onclick="toggleInfo()">
+            <p id="hobby-info">Hobby 1</p>
+            <p id="hobby-info">Hobby 2</p>
+            <p id="hobby-info">Hobby 3</p>
         </div>
+
     </section>
     <footer class="socials">
         <a target="_blank" rel="noopener" href="https://www.linkedin.com/in/camille-grubham"><i
@@ -66,6 +73,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
         crossorigin="anonymous"></script>
+    <script src="/scripts/hobbies.js"></script>
 </body>
 
 </html>

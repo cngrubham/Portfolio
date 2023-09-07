@@ -23,8 +23,6 @@
     font-size: 20px;
   }
   
-  
-  /*CAROUSEL SECTION */
   .carousel-container {
     width: 60%;
     display: flex;
@@ -35,11 +33,10 @@
   .carousel-images {
     width: 100%;
     min-width: 500px;
-    background: #90A397;
     padding: 40px;
     border-radius: 10px;
     box-sizing: border-box;
-    box-shadow:1px 2px 20px 20px #e9e9e931;
+    
   }
   
   .carousel-images img {
@@ -56,15 +53,17 @@
   
   .carousel-button {
     align-self: center;
-    color: #ffffff;
+    color: black;
+    background-color: rgb(255, 255, 255);
     margin: 20px;
     text-align: center;
+    border-radius: 50%;
+    
   }
   
   .carousel-button:hover {
     cursor: pointer;
     background: #15344D;
-    
     box-shadow: 1px 1px white;
     color: white;
   }

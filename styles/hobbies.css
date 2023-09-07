@@ -25,13 +25,42 @@ https://dev.to/yogeshdev/customize-the-grid-layout-using-css-variables-6mh*/
     gap: var(--gap);
 }
 
-.image-grid>img {
+.image-grid>div.hobby-card {
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    position: relative;
+   
+}
+
+.hobby-card img {
     width: 100%;
     height: 100%;
     object-fit: cover;
     border-radius: 20px;
+    /* opacity: .2; */
+    z-index: 10;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.hobby-info {
+    position: absolute;
+    top: 0;
+    z-index: 5;
+    transition: top .5s ease;
 }
 
+.hobby-card.expanded .hobby-info {
+    top: 104%;
+}
+.hobby-card:hover .hobby-info {
+    /* top: 104%; */
+    background-color: firebrick;
+}
+.hobby-card.expanded {
+    z-index: 100;
+}
 .image-grid-col-2 {
     grid-column: span 2;
 }
@@ -48,7 +77,7 @@ https://dev.to/yogeshdev/customize-the-grid-layout-using-css-variables-6mh*/
     }
 }
 
-.image-grid>p {
+.image-grid p {
     width: 100%;
     height: 90%;
     color: white;
@@ -61,9 +90,11 @@ https://dev.to/yogeshdev/customize-the-grid-layout-using-css-variables-6mh*/
     /* display: none; */
     font-family: 'Roboto Condensed', sans-serif;
 }
-.show {
-    display:block;
-}
+
+/* .show {
+    display: block;
+} */
+
 .socials {
     margin-top: 0;
     text-align: center;

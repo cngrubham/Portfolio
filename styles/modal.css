@@ -38,6 +38,7 @@
 }
 #close-modal-button:hover {
     box-shadow: 2px 2px 2px 2px white;
+    cursor: pointer;
 }
 
 .btn-primary {
@@ -48,4 +49,5 @@
 .btn-primary:hover {
     color: black;
     background-color: white;
+    cursor: pointer;
 }

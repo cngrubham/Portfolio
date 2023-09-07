@@ -1,6 +1,6 @@
 let currentImgIndex = 0;
 let previousImgIndex = 0;
-const images = document.getElementsByClassName("images-project");
+const images = document.getElementsByClassName("project-image-link");
 
 //grab the buttons and save to variable
 const next = document.querySelector(".next");

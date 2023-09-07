@@ -47,13 +47,12 @@
   }
   
   /* https://developer.mozilla.org/en-US/docs/Web/CSS/:first-child*/
-  /* div.carousel-images {
+  a.project-image-link {
     display: none;
-  } */
-  div.carousel-images:first-child {
+  }
+  a.project-image-link:first-child{
     display: block;
   }
-  
   
   .carousel-button {
     align-self: center;

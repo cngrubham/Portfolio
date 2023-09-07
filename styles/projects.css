@@ -17,10 +17,11 @@
     text-shadow: 1px 1px #20385f;
     letter-spacing: 2px;
     font-size: 60px;
+    
   }
-  .div>h2 {
-    letter-spacing: 2.5px;
+  .instructions {
     font-size: 20px;
+    text-align: center;
   }
   
   .carousel-container {
@@ -40,13 +41,16 @@
   }
   
   .carousel-images img {
-    display: none;
     max-width: 100%;
     height: 500px;
     border-radius: 10px;
   }
   
-  .carousel-images img:first-of-type {
+  /* https://developer.mozilla.org/en-US/docs/Web/CSS/:first-child*/
+  /* div.carousel-images {
+    display: none;
+  } */
+  div.carousel-images:first-child {
     display: block;
   }
   

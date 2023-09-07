@@ -1,6 +1,8 @@
 .hobby-title {
+    margin-top: 20px;
     color: white;
-    /* font-family:; */
+    font-family: 'Oleo Script', cursive;
+    font-size: 50px;
     text-align: center;
 }
 
@@ -15,10 +17,8 @@ https://dev.to/yogeshdev/customize-the-grid-layout-using-css-variables-6mh*/
     --gap: 16px;
     --num-cols: 3;
     --row-height: 400px;
-
     box-sizing: border-box;
     padding: var(--gap);
-
     display: grid;
     grid-template-columns: repeat(var(--num-cols), 1fr);
     grid-auto-rows: var(--row-height);
@@ -50,13 +50,16 @@ https://dev.to/yogeshdev/customize-the-grid-layout-using-css-variables-6mh*/
 
 .image-grid>p {
     width: 100%;
-    height: 100%;
+    height: 90%;
     color: white;
     background-color: #15344d;
     border-radius: 20px;
     text-align: center;
-    padding: 24px;
-    display: none;
+    font-size: 20px;
+    padding: 60px;
+
+    /* display: none; */
+    font-family: 'Roboto Condensed', sans-serif;
 }
 .show {
     display:block;

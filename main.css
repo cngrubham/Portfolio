@@ -8,6 +8,7 @@ body {
     font-family: 'Roboto Condensed', sans-serif;
     color: white;
     background-color: rgb(0, 0, 0);
+    text-shadow: 2px 2px 5px black;
 
 }
 
@@ -29,12 +30,14 @@ body {
     color: #0B3D3A;
     font-size: 140px;
     font-style: 'Roboto Condensed', sans-serif;
-    padding-top: 200px;
-    text-align: center; 
+    padding-top: 150px;
+    padding-bottom: 150px;
+    text-align: center;
+    text-shadow: 2px 2px 5px black;
     /* https://css-tricks.com/adding-stroke-to-web-text/ */
-    -webkit-text-fill-color: #134f7c;
-    -webkit-text-stroke-width: 1.5px;
-    -webkit-text-stroke-color: #ffffff;
+    -webkit-text-fill-color: rgb(255, 255, 255);
+    -webkit-text-stroke-width: 4px;
+    -webkit-text-stroke-color: #0b3d3a45;
 }
 
 .main-banner {
@@ -43,6 +46,11 @@ body {
     background-image: url('images/homebanner1.png');
     background-color: #0B3D3A;
     margin: 0;
+}
+
+.sub-heading {
+    margin-top: 80px;
+    padding: 40px;
 }
 
 .input-group-cng {
@@ -64,37 +72,65 @@ body {
     font-size: 32px;
     margin-top: 48px;
 }
+.contact-button:hover {
+    box-shadow: 0 10px 16px 0 rgba(0, 0, 0, 0.213), 0 17px 50px 0 rgba(0, 0, 0, 0.243);
+}
 
 .socials {
     margin-top: 0;
     text-align: center;
     word-spacing: 48px;
     background-color: #15344D;
-    padding: 0px;
+    padding: 10px;
     text-decoration: none;
     color: white;
     font-size: 30px;
+    position: fixed;
+    bottom:0;
+    left:0;
+    right:0;
+    height: 65px;
 }
 
 .about-me-container {
+    display: flex;
+    flex: column;
+    flex-wrap: wrap;
+}
+
+.about-me-banner {
     background-image: url('images/aboutmebanner.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     width: 100%;
-    height: 500px;
     margin: 0;
+
 }
 
 .about-info {
     width: 100%;
     margin: 0;
-    display: flex;
-    flex: column;
     height: 100%;
-    background-color: red;
+    background-color: #15344D;
+    justify-content: center;
+    box-shadow: 10px 5px 20px 0px rgba(6, 12, 22, 0.162) inset;
+
 }
 
 .bio-info {
-    margin-top: 80px;
-    font-size: 32px;
+    margin-top: 40px;
+    padding: 0px;
+    max-width: 33%;
+
+}
+
+li {
+    list-style-type: none;
+}
+
+.headshot {
+    padding: 40px;
+    max-width: 400px;
+    max-height: 600px;
+    border-radius: 50%;
 }

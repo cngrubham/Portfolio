@@ -115,10 +115,9 @@ p.hobby-info {
     .hobby-title {
         font-size: 35px;
     }
-
     .image-grid {
         --num-cols: 1;
-        --row-height: 180px;
+        --row-height: 100px;
     }
 
     .image-grid p {

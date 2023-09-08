@@ -2,13 +2,13 @@
 Wire Frames
 Copy and paste or drag and drop your images here
 
-Screenshot 2023-08-31 at 3 40 46 PM
+/Porfolio/images/Porfolio_images/screenshotmain.png
 
-Screenshot 2023-08-31 at 3 51 09 PM
+/Porfolio/images/Porfolio_images/screenshotprojects.png
 
-Screenshot 2023-08-31 at 4 01 43 PM
+/Porfolio/images/Porfolio_images/screenshotaboutme.png
 
-Screenshot 2023-08-31 at 4 05 26 PM
+/Porfolio/images/Porfolio_images/sceenshothobbies.png
 
 GitHub Repository
 Link to your project's GitHub repository here

@@ -102,12 +102,12 @@ p.hobby-info {
     padding: 10px;
     text-decoration: none;
     color: white;
-    font-size: 30px;
+    font-size: 25px;
     position: fixed;
     bottom: 0;
     left: 0;
     right: 0;
-    height: 65px;
+    height: 50px;
 }
 
 /* Anything under 900px */

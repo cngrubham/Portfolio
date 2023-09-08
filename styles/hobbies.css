@@ -16,7 +16,7 @@ https://dev.to/yogeshdev/customize-the-grid-layout-using-css-variables-6mh*/
 .image-grid {
     --gap: 16px;
     --num-cols: 3;
-    --row-height: 400px;
+    --row-height: 280px;
     box-sizing: border-box;
     padding: var(--gap);
     display: grid;
@@ -86,7 +86,7 @@ p.hobby-info {
     border-radius: 20px;
     text-align: center;
     vertical-align: center;
-    font-size: 20px;
+    font-size: 16px;
     padding: 40px;
     font-family: 'Roboto Condensed', sans-serif;
     display: flex;
@@ -114,6 +114,7 @@ p.hobby-info {
 @media screen and (max-width: 700px) {
     .hobby-title {
         font-size: 35px;
+        margin: 30px;
     }
     .image-grid {
         --num-cols: 1;

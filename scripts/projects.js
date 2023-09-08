@@ -3,11 +3,10 @@ let previousImgIndex = 0;
 const images = document.getElementsByClassName("project-image-link");
 
 //grab the buttons and save to variable
-const next = document.querySelector(".next");
-const prev = document.querySelector(".prev");
+const next = document.querySelectorAll(".next");
+const prev = document.querySelectorAll(".prev");
 
-//set event for button "next"
-next.addEventListener("click", () => {
+const handleNext = () => {
   //console.log("You have clicked the next button");
   // The image being displayed currently will now become the previous image
   previousImgIndex = currentImgIndex;
@@ -19,11 +18,8 @@ next.addEventListener("click", () => {
   }
 
   changeDisplay();
-
-});
-
-//set event for button "previous"
-prev.addEventListener("click", () => {
+};
+const handlePrev = () => {
   //console.log("You have clicked the previous button");
 
   // The image being displayed previously will now become the current image
@@ -35,7 +31,13 @@ prev.addEventListener("click", () => {
     currentImgIndex = images.length - 1;
   }
   changeDisplay();
-});
+};
+//set event for button "next"
+next[0].addEventListener("click", handleNext);
+next[1].addEventListener("click", handleNext);
+//set event for button "previous"
+prev[0].addEventListener("click", handlePrev);
+prev[1].addEventListener("click", handlePrev);
 
 function changeDisplay() {
   images[previousImgIndex].style.display = "none";

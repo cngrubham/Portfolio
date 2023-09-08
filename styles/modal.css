@@ -51,3 +51,13 @@
     background-color: white;
     cursor: pointer;
 }
+@media screen and (max-width:700px) {
+    
+    .modal-box {
+        height: 50%;
+        width: 95%;
+        padding:20px 20px 20px 20px;
+        font-size: 12px;
+    }
+    
+}

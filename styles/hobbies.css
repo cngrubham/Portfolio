@@ -1,7 +1,7 @@
 .hobby-title {
     margin-top: 20px;
     color: white;
-    font-family: 'Oleo Script', cursive;
+    font-family: 'Caveat', cursive;
     font-size: 50px;
     text-align: center;
 }
@@ -30,7 +30,7 @@ https://dev.to/yogeshdev/customize-the-grid-layout-using-css-variables-6mh*/
     height: 100%;
     border-radius: 20px;
     position: relative;
-   
+
 }
 
 .hobby-card img {
@@ -44,6 +44,7 @@ https://dev.to/yogeshdev/customize-the-grid-layout-using-css-variables-6mh*/
     top: 0;
     left: 0;
 }
+
 .hobby-info {
     position: absolute;
     top: 0;
@@ -54,13 +55,16 @@ https://dev.to/yogeshdev/customize-the-grid-layout-using-css-variables-6mh*/
 .hobby-card.expanded .hobby-info {
     top: 104%;
 }
+
 .hobby-card:hover .hobby-info {
     /* top: 104%; */
-    background-color: firebrick;
+    background-color: #006f68;
 }
+
 .hobby-card.expanded {
     z-index: 100;
 }
+
 .image-grid-col-2 {
     grid-column: span 2;
 }
@@ -69,12 +73,9 @@ https://dev.to/yogeshdev/customize-the-grid-layout-using-css-variables-6mh*/
     grid-row: span 2;
 }
 
-/* Anything under 900px */
-@media screen and (max-width: 900px) {
-    .image-grid {
-        --num-cols: 1;
-        --row-height: 200px;
-    }
+p.hobby-info {
+    display: table-cell;
+    vertical-align: center;
 }
 
 .image-grid p {
@@ -84,16 +85,14 @@ https://dev.to/yogeshdev/customize-the-grid-layout-using-css-variables-6mh*/
     background-color: #15344d;
     border-radius: 20px;
     text-align: center;
+    vertical-align: center;
     font-size: 20px;
-    padding: 60px;
-
-    /* display: none; */
+    padding: 40px;
     font-family: 'Roboto Condensed', sans-serif;
+    display: flex;
+    align-items: center;
 }
 
-/* .show {
-    display: block;
-} */
 
 .socials {
     margin-top: 0;
@@ -109,4 +108,34 @@ https://dev.to/yogeshdev/customize-the-grid-layout-using-css-variables-6mh*/
     left: 0;
     right: 0;
     height: 65px;
+}
+
+/* Anything under 900px */
+@media screen and (max-width: 700px) {
+    .hobby-title {
+        font-size: 35px;
+    }
+
+    .image-grid {
+        --num-cols: 1;
+        --row-height: 180px;
+    }
+
+    .image-grid p {
+        width: 100%;
+        height: 90%;
+        padding: 20px;
+        font-size: 15px;
+    }
+
+    .hobby-info {
+        contain: content;
+        padding: 0;
+    }
+
+    .socials {
+        z-index: 100;
+        font-size: 20px;
+        height: 50px;
+    }
 }

@@ -1,73 +1,124 @@
 /*GENERAL */
+.body {
+  height: 100vh;
+  margin: 0;
+  width: 100%;
+}
 
-  .container {
-    margin-top: 20px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-  
-  .container>img {
-    width: 100%;
-  }
-  
-  .container>h1 {
-    margin-top: -200px;
-    color: #ffffff;
-    text-shadow: 1px 1px #20385f;
-    letter-spacing: 2px;
-    font-size: 60px;
-    
-  }
-  .instructions {
-    font-size: 20px;
-    text-align: center;
-  }
-  
+.container {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-height: 50%;
+}
+
+.container>img {
+  width: 100%;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+}
+
+.container>h1 {
+  margin-top: -200px;
+  color: #ffffff;
+  text-shadow: 1px 1px #20385f;
+  letter-spacing: 2px;
+  font-size: 60px;
+  font-family: 'Caveat', cursive;
+}
+
+.instructions {
+  font-size: 20px;
+  text-align: center;
+}
+
+.carousel-container {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+
+}
+
+.carousel-images {
+  width: 100%;
+  min-width: 500px;
+  padding: 40px;
+  border-radius: 10px;
+  box-sizing: border-box;
+
+}
+
+.carousel-images img {
+  max-width: 100%;
+  height: 500px;
+  border-radius: 10px;
+}
+
+/* https://developer.mozilla.org/en-US/docs/Web/CSS/:first-child*/
+a.project-image-link {
+  display: none;
+}
+
+a.project-image-link:first-child {
+  display: block;
+}
+
+.carousel-button {
+  align-self: center;
+  color: white;
+  background-color: rgb(9, 91, 92);
+  margin: 20px;
+  text-align: center;
+  border-radius: 20%;
+
+}
+
+.carousel-button:hover {
+  cursor: pointer;
+  background: #15344D;
+  box-shadow: 1px 1px white;
+  color: white;
+}
+
+.mobile-carousel-buttons {
+  display: none;
+  justify-content: space-around;
+}
+
+
+@media screen and (max-width:700px) {
   .carousel-container {
-    width: 60%;
-    display: flex;
-    justify-content: space-around;
-    
-  }
-  
-  .carousel-images {
     width: 100%;
-    min-width: 500px;
-    padding: 40px;
-    border-radius: 10px;
-    box-sizing: border-box;
-    
   }
-  
-  .carousel-images img {
-    max-width: 100%;
-    height: 500px;
-    border-radius: 10px;
+
+  .container>h1 {
+    margin-top: 40px;
   }
-  
-  /* https://developer.mozilla.org/en-US/docs/Web/CSS/:first-child*/
-  a.project-image-link {
-    display: none;
-  }
-  a.project-image-link:first-child{
-    display: block;
-  }
-  
-  .carousel-button {
-    align-self: center;
-    color: black;
-    background-color: rgb(255, 255, 255);
-    margin: 20px;
-    text-align: center;
-    border-radius: 50%;
-    
-  }
-  
-  .carousel-button:hover {
-    cursor: pointer;
-    background: #15344D;
-    box-shadow: 1px 1px white;
+
+  .mobile-carousel-buttons {
+    display: flex;
+    height: 5px;
+    background-color: black;
     color: white;
   }
-  
+
+  .carousel-button-desktop {
+    display: none;
+
+  }
+
+  .carousel-images img {
+    width: 100%;
+    height: 300px;
+    border-radius: 10px;
+    padding: 0;
+    margin: 0;
+  }
+
+  .socials {
+    font-size: 25px;
+    height: 55px;
+  }
+}

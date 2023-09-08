@@ -114,8 +114,9 @@ p.hobby-info {
 @media screen and (max-width: 700px) {
     .hobby-title {
         font-size: 35px;
-        margin: 30px;
+        margin: 30px 20px 0 20px;
     }
+
     .image-grid {
         --num-cols: 1;
         --row-height: 100px;

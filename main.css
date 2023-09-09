@@ -100,7 +100,7 @@ body {
     display: flex;
     flex: column;
     flex-wrap: wrap;
-    height: 100%;
+    height: auto;
 }
 
 .about-me-banner {

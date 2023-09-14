@@ -1,7 +1,6 @@
 # Portfolio
 <!-- Screen shot -->
-/Porfolio/images/Porfolio_images/Screenshot 2023-09-09 at 3.00.25 PM.png
-/Porfolio/images/Porfolio_images/Screenshot 2023-09-09 at 3.02.09 PM.png
+images/Porfolio_images/Screenshot 2023-09-09 at 3.56.03 PM.png
 
 <!-- Technologies Used -->
 
